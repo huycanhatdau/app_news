@@ -1,0 +1,25 @@
+import 'router_default.dart';
+Route<dynamic>? generateRoute(RouteSettings settings) {
+  switch (settings.name) {
+    case '/': return MaterialPageRoute(builder: (_) => const StartPage());
+   case '/Account/ChangePassword':return MaterialPageRoute(builder: (_) => const AccountChangePasswordPage());
+   case '/Account/DeleteAccount':return MaterialPageRoute(builder: (_) => const AccountDeleteAccountPage());
+   case '/Account/EditInformation':return MaterialPageRoute(builder: (_) => const AccountEditInformationPage());
+   case '/Account/Information':return MaterialPageRoute(builder: (_) => const AccountInformationPage());
+   case '/Account/Login':return MaterialPageRoute(builder: (_) => const AccountLoginPage());
+   case '/Account/Notification/Detail':return MaterialPageRoute(builder: (_) => AccountNotificationDetailPage(settings.arguments));
+   case '/Account/Notification':return MaterialPageRoute(builder: (_) => const AccountNotificationPage());
+   case '/Account/Register':return MaterialPageRoute(builder: (_) => const AccountRegisterPage());
+   case '/AppNotFound':return MaterialPageRoute(builder: (_) => const AppNotFoundPage());
+   case '/Camera':return MaterialPageRoute(builder: (_) => const CameraPage());
+   case '/Forbidden':return MaterialPageRoute(builder: (_) => const ForbiddenPage());
+   case '/Search':return MaterialPageRoute(builder: (_) => SearchPage(settings.arguments as Map?));
+
+   case '/Start':return MaterialPageRoute(builder: (_) => const StartPage());
+    default:
+      return CommonPageRoute(
+        isDefault: true,
+        builder: (_) => RouterDefault(settings: settings,)
+      );
+  }
+}

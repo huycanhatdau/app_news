@@ -1,0 +1,324 @@
+import 'package:vhv_basic/pages/Account/ChangePassword/Page.dart';
+import 'package:vhv_basic/pages/Account/DeleteAccount/Page.dart';
+import 'package:vhv_basic/pages/Account/EditInformation/Page.dart';
+import 'pages/account/information/page.dart';
+import 'pages/account/login/page.dart';
+import 'package:vhv_basic/pages/Account/Notification/Detail/Page.dart';
+import 'pages/account/notification/page.dart';
+import 'pages/account/register/page.dart';
+import 'package:vhv_basic/pages/app_not_found/page.dart';
+import 'package:vhv_basic/pages/camera/page.dart';
+import 'package:vhv_basic/pages/forbidden/page.dart';
+import 'package:vhv_basic/pages/search/page.dart';
+import 'package:vhv_basic/pages/Video/Page.dart';
+import 'package:vhv_basic/pages/ViewFile/Page.dart';
+import 'package:vhv_ecommerce/pages/ecommerce/account/address/edit/page.dart';
+import 'package:vhv_ecommerce/pages/ecommerce/account/address/page.dart';
+import 'package:vhv_ecommerce/pages/ecommerce/cart/page.dart';
+import 'package:vhv_ecommerce/pages/ecommerce/checkout/page.dart';
+import 'package:vhv_ecommerce/pages/ecommerce/home/cart/order_success/page.dart';
+import 'package:vhv_ecommerce/pages/ecommerce/home/payment/page.dart';
+import 'package:vhv_social/pages/Account/Blocked/Page.dart';
+import 'package:vhv_social/pages/Account/Bookmark/Page.dart';
+import 'package:vhv_social/pages/Account/Detail/Page.dart';
+import 'package:vhv_social/pages/Account/Friend/Page.dart';
+import 'package:vhv_social/pages/Account/Friend/Request/Page.dart';
+import 'package:vhv_social/pages/Account/Group/Edit/Page.dart';
+import 'package:vhv_social/pages/Account/Group/Page.dart';
+import 'package:vhv_social/pages/Account/Profile/Edit/Page.dart';
+import 'package:vhv_social/pages/Group/Detail/Page.dart';
+import 'package:vhv_social/pages/Group/Event/Detail/Page.dart';
+import 'package:vhv_social/pages/Group/Page.dart';
+import 'package:vhv_social/pages/Social/Chat/Info/Page.dart';
+import 'package:vhv_social/pages/Social/Chat/List/Page.dart';
+import 'package:vhv_social/pages/Social/Chat/Page.dart';
+import 'package:vhv_social/pages/Social/comment/page.dart';
+import 'package:vhv_social/pages/Social/comment/reply/page.dart';
+import 'package:vhv_social/pages/Social/Group/Event/Edit/Page.dart';
+import 'package:vhv_social/pages/Social/Group/Event/List/Page.dart';
+import 'package:vhv_social/pages/Social/Group/List/Page.dart';
+import 'package:vhv_social/pages/Social/Messenger/Page.dart';
+import 'package:vhv_social/pages/Social/NewsFeed/Page.dart';
+import 'package:vhv_social/pages/Social/Post/Detail/Page.dart';
+import 'package:vhv_social/pages/Social/Post/Edit/Page.dart';
+import 'package:vhv_social/pages/Social/Post/Like/Page.dart';
+import 'package:vhv_social/pages/Social/Post/Share/Group/Page.dart';
+import 'package:vhv_social/pages/Social/Search/Page.dart';
+import 'package:vhv_social/pages/Social/SelectFriend/Page.dart';
+import 'pages/account/cash_out/create/page.dart';
+import 'pages/account/cash_out/page.dart';
+import 'pages/account/home/page.dart';
+import 'pages/account/home/promotions/page.dart';
+import 'pages/account/information/change/page.dart';
+import 'pages/account/information/change_password/page.dart';
+import 'pages/account/my_wallet/card/free_ticket/page.dart';
+import 'pages/account/my_wallet/page.dart';
+import 'pages/account/play_history/detail/page.dart';
+import 'pages/account/play_history/page.dart';
+import 'pages/account/promotion/page.dart';
+import 'pages/account/register/detail/page.dart';
+import 'pages/account/transaction_history/page.dart';
+import 'pages/gift_exchange/page.dart';
+import 'pages/home/lottery_game/page.dart';
+import 'pages/home/news/detail/page.dart';
+import 'pages/home/news/page.dart';
+import 'pages/home/page.dart';
+import 'pages/home/promotions/page.dart';
+import 'pages/home/winner/page.dart';
+import 'pages/loading/page.dart';
+import 'pages/package_ts/page.dart';
+import 'pages/payment/result/page.dart';
+import 'pages/project/lottery/home/lottery_period/power/combo/page.dart';
+import 'pages/project/lottery/home/lottery_period/power/detail/page.dart';
+import 'pages/project/lottery/home/payment/page.dart';
+import 'pages/project/lottery/home/payment/result/page.dart';
+import 'pages/promotion/detail/page.dart';
+import 'pages/promotion/page.dart';
+import 'pages/recharge/page.dart';
+import 'pages/result/page.dart';
+import 'pages/shop_search_nearby/page.dart';
+import 'pages/start/page.dart';
+class RouterConstants{
+  const RouterConstants._();
+  static String get root => '/';
+
+  ///Router to [AccountChangePasswordPage]
+  static String get accountChangePassword => '/Account/ChangePassword';
+
+  ///Router to [AccountDeleteAccountPage]
+  static String get accountDeleteAccount => '/Account/DeleteAccount';
+
+  ///Router to [AccountEditInformationPage]
+  static String get accountEditInformation => '/Account/EditInformation';
+
+  ///Router to [AccountInformationPage]
+  static String get accountInformation => '/Account/Information';
+
+  ///Router to [AccountLoginPage]
+  static String get accountLogin => '/Account/Login';
+
+  ///Router to [AccountNotificationDetailPage]
+  static String get accountNotificationDetail => '/Account/Notification/Detail';
+
+  ///Router to [AccountNotificationPage]
+  static String get accountNotification => '/Account/Notification';
+
+  ///Router to [AccountRegisterPage]
+  static String get accountRegister => '/Account/Register';
+
+  ///Router to [AppNotFoundPage]
+  static String get appNotFound => '/AppNotFound';
+
+  ///Router to [CameraPage]
+  static String get camera => '/Camera';
+
+  ///Router to [ForbiddenPage]
+  static String get forbidden => '/Forbidden';
+
+  ///Router to [SearchPage]
+  static String get search => '/Search';
+
+  ///Router to [VideoPage]
+  static String get video => '/Video';
+
+  ///Router to [ViewFilePage]
+  static String get viewFile => '/ViewFile';
+
+  ///Router to [EcommerceAccountAddressEditPage]
+  static String get ecommerceAccountAddressEdit => '/Ecommerce/Account/Address/Edit';
+
+  ///Router to [EcommerceAccountAddressPage]
+  static String get ecommerceAccountAddress => '/Ecommerce/Account/Address';
+
+  ///Router to [EcommerceCartPage]
+  static String get ecommerceCart => '/Ecommerce/Cart';
+
+  ///Router to [EcommerceCheckoutPage]
+  static String get ecommerceCheckout => '/Ecommerce/Checkout';
+
+  ///Router to [EcommerceHomeCartOrderSuccessPage]
+  static String get ecommerceHomeCartOrderSuccess => '/Ecommerce/Home/Cart/OrderSuccess';
+
+  ///Router to [EcommerceHomePaymentPage]
+  static String get ecommerceHomePayment => '/Ecommerce/Home/Payment';
+
+  ///Router to [AccountBlockedPage]
+  static String get accountBlocked => '/Account/Blocked';
+
+  ///Router to [AccountBookmarkPage]
+  static String get accountBookmark => '/Account/Bookmark';
+
+  ///Router to [AccountDetailPage]
+  static String get accountDetail => '/Account/Detail';
+
+  ///Router to [AccountFriendPage]
+  static String get accountFriend => '/Account/Friend';
+
+  ///Router to [AccountFriendRequestPage]
+  static String get accountFriendRequest => '/Account/Friend/Request';
+
+  ///Router to [AccountGroupEditPage]
+  static String get accountGroupEdit => '/Account/Group/Edit';
+
+  ///Router to [AccountGroupPage]
+  static String get accountGroup => '/Account/Group';
+
+  ///Router to [AccountProfileEditPage]
+  static String get accountProfileEdit => '/Account/Profile/Edit';
+
+  ///Router to [GroupDetailPage]
+  static String get groupDetail => '/Group/Detail';
+
+  ///Router to [GroupEventDetailPage]
+  static String get groupEventDetail => '/Group/Event/Detail';
+
+  ///Router to [GroupPage]
+  static String get group => '/Group';
+
+  ///Router to [SocialChatInfoPage]
+  static String get socialChatInfo => '/Social/Chat/Info';
+
+  ///Router to [SocialChatListPage]
+  static String get socialChatList => '/Social/Chat/List';
+
+  ///Router to [SocialChatPage]
+  static String get socialChat => '/Social/Chat';
+
+  ///Router to [SocialCommentPage]
+  static String get socialComment => '/Social/Comment';
+
+  ///Router to [SocialCommentReplyPage]
+  static String get socialCommentReply => '/Social/Comment/Reply';
+
+  ///Router to [SocialGroupEventEditPage]
+  static String get socialGroupEventEdit => '/Social/Group/Event/Edit';
+
+  ///Router to [SocialGroupEventListPage]
+  static String get socialGroupEventList => '/Social/Group/Event/List';
+
+  ///Router to [SocialGroupListPage]
+  static String get socialGroupList => '/Social/Group/List';
+
+  ///Router to [SocialMessengerPage]
+  static String get socialMessenger => '/Social/Messenger';
+
+  ///Router to [SocialNewsFeedPage]
+  static String get socialNewsFeed => '/Social/NewsFeed';
+
+  ///Router to [SocialPostDetailPage]
+  static String get socialPostDetail => '/Social/Post/Detail';
+
+  ///Router to [SocialPostEditPage]
+  static String get socialPostEdit => '/Social/Post/Edit';
+
+  ///Router to [SocialPostLikePage]
+  static String get socialPostLike => '/Social/Post/Like';
+
+  ///Router to [SocialPostShareGroupPage]
+  static String get socialPostShareGroup => '/Social/Post/Share/Group';
+
+  ///Router to [SocialSearchPage]
+  static String get socialSearch => '/Social/Search';
+
+  ///Router to [SocialSelectFriendPage]
+  static String get socialSelectFriend => '/Social/SelectFriend';
+
+  ///Router to [AccountCashOutCreatePage]
+  static String get accountCashOutCreate => '/Account/CashOut/Create';
+
+  ///Router to [AccountCashOutPage]
+  static String get accountCashOut => '/Account/CashOut';
+
+  ///Router to [AccountHomePage]
+  static String get accountHome => '/Account/Home';
+
+  ///Router to [AccountHomePromotionsPage]
+  static String get accountHomePromotions => '/Account/Home/Promotions';
+
+  ///Router to [AccountInformationChangePage]
+  static String get accountInformationChange => '/Account/Information/Change';
+
+  ///Router to [AccountInformationChangePasswordPage]
+  static String get accountInformationChangePassword => '/Account/Information/ChangePassword';
+
+  ///Router to [AccountMyWalletCardFreeTicketPage]
+  static String get accountMyWalletCardFreeTicket => '/Account/MyWallet/Card/FreeTicket';
+
+  ///Router to [AccountMyWalletPage]
+  static String get accountMyWallet => '/Account/MyWallet';
+
+  ///Router to [AccountPlayHistoryDetailPage]
+  static String get accountPlayHistoryDetail => '/Account/PlayHistory/Detail';
+
+  ///Router to [AccountPlayHistoryPage]
+  static String get accountPlayHistory => '/Account/PlayHistory';
+
+  ///Router to [AccountPromotionPage]
+  static String get accountPromotion => '/Account/Promotion';
+
+  ///Router to [AccountRegisterDetailPage]
+  static String get accountRegisterDetail => '/Account/Register/Detail';
+
+  ///Router to [AccountTransactionHistoryPage]
+  static String get accountTransactionHistory => '/Account/TransactionHistory';
+
+  ///Router to [GiftExchangePage]
+  static String get giftExchange => '/GiftExchange';
+
+  ///Router to [HomeLotteryGamePage]
+  static String get homeLotteryGame => '/Home/LotteryGame';
+
+  ///Router to [HomeNewsDetailPage]
+  static String get homeNewsDetail => '/Home/News/Detail';
+
+  ///Router to [HomeNewsPage]
+  static String get homeNews => '/Home/News';
+
+  ///Router to [HomePage]
+  static String get home => '/Home';
+
+  ///Router to [HomePromotionsPage]
+  static String get homePromotions => '/Home/Promotions';
+
+  ///Router to [HomeWinnerPage]
+  static String get homeWinner => '/Home/Winner';
+
+  ///Router to [LoadingPage]
+  static String get loading => '/Loading';
+
+  ///Router to [PackageTsPage]
+  static String get packageTs => '/PackageTs';
+
+  ///Router to [PaymentResultPage]
+  static String get paymentResult => '/Payment/Result';
+
+  ///Router to [ProjectLotteryHomeLotteryPeriodPowerComboPage]
+  static String get projectLotteryHomeLotteryPeriodPowerCombo => '/Project/Lottery/Home/LotteryPeriod/Power/Combo';
+
+  ///Router to [ProjectLotteryHomeLotteryPeriodPowerDetailPage]
+  static String get projectLotteryHomeLotteryPeriodPowerDetail => '/Project/Lottery/Home/LotteryPeriod/Power/Detail';
+
+  ///Router to [ProjectLotteryHomePaymentPage]
+  static String get projectLotteryHomePayment => '/Project/Lottery/Home/Payment';
+
+  ///Router to [ProjectLotteryHomePaymentResultPage]
+  static String get projectLotteryHomePaymentResult => '/Project/Lottery/Home/Payment/Result';
+
+  ///Router to [PromotionDetailPage]
+  static String get promotionDetail => '/Promotion/Detail';
+
+  ///Router to [PromotionPage]
+  static String get promotion => '/Promotion';
+
+  ///Router to [RechargePage]
+  static String get recharge => '/Recharge';
+
+  ///Router to [ResultPage]
+  static String get result => '/Result';
+
+  ///Router to [ShopSearchNearbyPage]
+  static String get shopSearchNearby => '/ShopSearchNearby';
+
+  ///Router to [StartPage]
+  static String get start => '/Start';
+}
